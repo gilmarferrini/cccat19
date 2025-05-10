@@ -1,12 +1,13 @@
 {
   "name": "ride",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "signup.ts",
   "license": "MIT",
   "scripts": {
     "docker:start": "docker compose up -d",
     "docker:stop": "docker compose stop",
     "docker:clean": "docker compose rm -fsv",
+    "start:dev": "nodemon --watch src --exec ts-node src/signup.ts",
     "test": "jest"
   },
   "dependencies": {

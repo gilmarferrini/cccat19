@@ -1,6 +1,6 @@
 export function validateCpf (cpf: string) {
 	if (!cpf) return false;
-	cpf = clean(cpf); 
+	cpf = clean(cpf);
 	if (cpf.length !== 11) return false;
 	if (allDigitsTheSame(cpf)) return false;
 	const dg1 = calculateDigit(cpf, 10);
